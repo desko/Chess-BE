@@ -18,6 +18,6 @@ RouterRoutes.get('/', (req: Request, res: Response) => {
 
 RouterRoutes.post('/register', registerRoute);
 
-RouterRoutes.get('/login', loginRoute);
+RouterRoutes.post('/login', loginRoute);
 
 export default RouterRoutes;

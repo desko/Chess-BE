@@ -11,7 +11,7 @@ const registerRoute = (req: Request, res: Response) => {
 
 	if (!validate.success) {
 		console.log(validate.error);
-		res.status(400).json(validate.error.issues);
+		res.status(400).json([null, validate.error.issues]);
 	}
 
 	if (validate.success) {
